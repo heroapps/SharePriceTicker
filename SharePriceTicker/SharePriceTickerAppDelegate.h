@@ -2,7 +2,7 @@
 //  SharePriceTickerAppDelegate.h
 //  SharePriceTicker
 //
-//  Created by Daniel Slay on 19/08/2012.
+//  Created by Dan on 19/08/2012.
 //  Copyright (c) 2012 HERO Apps. All rights reserved.
 //
 
@@ -10,6 +10,8 @@
 
 @interface SharePriceTickerAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSMenu *statusMenu;
+
+@property (strong, nonatomic) NSStatusItem *statusBar;
 
 @end
