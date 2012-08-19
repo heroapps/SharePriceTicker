@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3781F37215E1569600629814 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3781F37115E1569600629814 /* Cocoa.framework */; };
+		3781F37C15E1569600629814 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3781F37A15E1569600629814 /* InfoPlist.strings */; };
+		3781F37E15E1569600629814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781F37D15E1569600629814 /* main.m */; };
+		3781F38215E1569600629814 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3781F38015E1569600629814 /* Credits.rtf */; };
+		3781F38515E1569600629814 /* SharePriceTickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781F38415E1569600629814 /* SharePriceTickerAppDelegate.m */; };
+		3781F38815E1569700629814 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3781F38615E1569700629814 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3781F36D15E1569600629814 /* SharePriceTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePriceTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3781F37115E1569600629814 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3781F37415E1569600629814 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3781F37515E1569600629814 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3781F37615E1569600629814 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3781F37915E1569600629814 /* SharePriceTicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SharePriceTicker-Info.plist"; sourceTree = "<group>"; };
+		3781F37B15E1569600629814 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3781F37D15E1569600629814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3781F37F15E1569600629814 /* SharePriceTicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SharePriceTicker-Prefix.pch"; sourceTree = "<group>"; };
+		3781F38115E1569600629814 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3781F38315E1569600629814 /* SharePriceTickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharePriceTickerAppDelegate.h; sourceTree = "<group>"; };
+		3781F38415E1569600629814 /* SharePriceTickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharePriceTickerAppDelegate.m; sourceTree = "<group>"; };
+		3781F38715E1569700629814 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3781F36A15E1569600629814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3781F37215E1569600629814 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3781F36215E1569600629814 = {
+			isa = PBXGroup;
+			children = (
+				3781F37715E1569600629814 /* SharePriceTicker */,
+				3781F37015E1569600629814 /* Frameworks */,
+				3781F36E15E1569600629814 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3781F36E15E1569600629814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3781F36D15E1569600629814 /* SharePriceTicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3781F37015E1569600629814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3781F37115E1569600629814 /* Cocoa.framework */,
+				3781F37315E1569600629814 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3781F37315E1569600629814 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3781F37415E1569600629814 /* AppKit.framework */,
+				3781F37515E1569600629814 /* CoreData.framework */,
+				3781F37615E1569600629814 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3781F37715E1569600629814 /* SharePriceTicker */ = {
+			isa = PBXGroup;
+			children = (
+				3781F38315E1569600629814 /* SharePriceTickerAppDelegate.h */,
+				3781F38415E1569600629814 /* SharePriceTickerAppDelegate.m */,
+				3781F38615E1569700629814 /* MainMenu.xib */,
+				3781F37815E1569600629814 /* Supporting Files */,
+			);
+			path = SharePriceTicker;
+			sourceTree = "<group>";
+		};
+		3781F37815E1569600629814 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3781F37915E1569600629814 /* SharePriceTicker-Info.plist */,
+				3781F37A15E1569600629814 /* InfoPlist.strings */,
+				3781F37D15E1569600629814 /* main.m */,
+				3781F37F15E1569600629814 /* SharePriceTicker-Prefix.pch */,
+				3781F38015E1569600629814 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3781F36C15E1569600629814 /* SharePriceTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3781F38B15E1569700629814 /* Build configuration list for PBXNativeTarget "SharePriceTicker" */;
+			buildPhases = (
+				3781F36915E1569600629814 /* Sources */,
+				3781F36A15E1569600629814 /* Frameworks */,
+				3781F36B15E1569600629814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharePriceTicker;
+			productName = SharePriceTicker;
+			productReference = 3781F36D15E1569600629814 /* SharePriceTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3781F36415E1569600629814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SharePriceTicker;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "HERO Apps";
+			};
+			buildConfigurationList = 3781F36715E1569600629814 /* Build configuration list for PBXProject "SharePriceTicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3781F36215E1569600629814;
+			productRefGroup = 3781F36E15E1569600629814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3781F36C15E1569600629814 /* SharePriceTicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3781F36B15E1569600629814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3781F37C15E1569600629814 /* InfoPlist.strings in Resources */,
+				3781F38215E1569600629814 /* Credits.rtf in Resources */,
+				3781F38815E1569700629814 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3781F36915E1569600629814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3781F37E15E1569600629814 /* main.m in Sources */,
+				3781F38515E1569600629814 /* SharePriceTickerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3781F37A15E1569600629814 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3781F37B15E1569600629814 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3781F38015E1569600629814 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3781F38115E1569600629814 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3781F38615E1569700629814 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3781F38715E1569700629814 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3781F38915E1569700629814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3781F38A15E1569700629814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3781F38C15E1569700629814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SharePriceTicker/SharePriceTicker-Prefix.pch";
+				INFOPLIST_FILE = "SharePriceTicker/SharePriceTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3781F38D15E1569700629814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SharePriceTicker/SharePriceTicker-Prefix.pch";
+				INFOPLIST_FILE = "SharePriceTicker/SharePriceTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3781F36715E1569600629814 /* Build configuration list for PBXProject "SharePriceTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3781F38915E1569700629814 /* Debug */,
+				3781F38A15E1569700629814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3781F38B15E1569700629814 /* Build configuration list for PBXNativeTarget "SharePriceTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3781F38C15E1569700629814 /* Debug */,
+				3781F38D15E1569700629814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3781F36415E1569600629814 /* Project object */;
+}
