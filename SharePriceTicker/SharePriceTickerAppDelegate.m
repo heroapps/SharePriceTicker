@@ -7,6 +7,7 @@
 //
 
 #import "SharePriceTickerAppDelegate.h"
+#import "SBJson.h"
 
 @implementation SharePriceTickerAppDelegate
 
@@ -30,6 +31,7 @@
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
     
+    //NSError *error = nil;
     
     NSTimer *timer;
     
@@ -37,6 +39,27 @@
     
     [timer fire];
     
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.kivaws.org/v1/loans/search.json?status=fundraising"]];
+    
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    NSString *json_string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    
+    //NSString *stringWithoutSpaces = [json_string stringByReplacingOccurrencesOfString:@"//" withString:@""];
+    //stringWithoutSpaces = [stringWithoutSpaces stringByReplacingOccurrencesOfString:@"[" withString:@""];
+    //stringWithoutSpaces = [stringWithoutSpaces stringByReplacingOccurrencesOfString:@"]" withString:@""];
+   
+    //NSDictionary *myDict = [parser objectWithString:stringWithoutSpaces];
+    
+    NSArray *statuses = [parser objectWithString:json_string error:nil];
+    
+    
+    NSLog(@"statuses:%@", statuses);
+    
+    parser = nil;
     
 }
 

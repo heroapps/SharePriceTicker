@@ -13,6 +13,18 @@
 		3781F38215E1569600629814 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3781F38015E1569600629814 /* Credits.rtf */; };
 		3781F38515E1569600629814 /* SharePriceTickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781F38415E1569600629814 /* SharePriceTickerAppDelegate.m */; };
 		3781F38815E1569700629814 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3781F38615E1569700629814 /* MainMenu.xib */; };
+		37EEA19515E265E4002DBAD2 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA17C15E23FDA002DBAD2 /* NSObject+SBJson.m */; };
+		37EEA19615E265E4002DBAD2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA17F15E23FDA002DBAD2 /* SBJsonParser.m */; };
+		37EEA19715E265E4002DBAD2 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18115E23FDA002DBAD2 /* SBJsonStreamParser.m */; };
+		37EEA19815E265E4002DBAD2 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18315E23FDA002DBAD2 /* SBJsonStreamParserAccumulator.m */; };
+		37EEA19915E265E4002DBAD2 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18515E23FDA002DBAD2 /* SBJsonStreamParserAdapter.m */; };
+		37EEA19A15E265E4002DBAD2 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18715E23FDA002DBAD2 /* SBJsonStreamParserState.m */; };
+		37EEA19B15E265E4002DBAD2 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18915E23FDA002DBAD2 /* SBJsonStreamWriter.m */; };
+		37EEA19C15E265E4002DBAD2 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18B15E23FDA002DBAD2 /* SBJsonStreamWriterAccumulator.m */; };
+		37EEA19D15E265E4002DBAD2 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18D15E23FDA002DBAD2 /* SBJsonStreamWriterState.m */; };
+		37EEA19E15E265E4002DBAD2 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA18F15E23FDA002DBAD2 /* SBJsonTokeniser.m */; };
+		37EEA19F15E265E4002DBAD2 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA19115E23FDA002DBAD2 /* SBJsonUTF8Stream.m */; };
+		37EEA1A015E265E4002DBAD2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EEA19315E23FDA002DBAD2 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +41,31 @@
 		3781F38315E1569600629814 /* SharePriceTickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharePriceTickerAppDelegate.h; sourceTree = "<group>"; };
 		3781F38415E1569600629814 /* SharePriceTickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharePriceTickerAppDelegate.m; sourceTree = "<group>"; };
 		3781F38715E1569700629814 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		37EEA17B15E23FDA002DBAD2 /* NSObject+SBJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		37EEA17C15E23FDA002DBAD2 /* NSObject+SBJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		37EEA17D15E23FDA002DBAD2 /* SBJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		37EEA17E15E23FDA002DBAD2 /* SBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		37EEA17F15E23FDA002DBAD2 /* SBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		37EEA18015E23FDA002DBAD2 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		37EEA18115E23FDA002DBAD2 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		37EEA18215E23FDA002DBAD2 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		37EEA18315E23FDA002DBAD2 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		37EEA18415E23FDA002DBAD2 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		37EEA18515E23FDA002DBAD2 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		37EEA18615E23FDA002DBAD2 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		37EEA18715E23FDA002DBAD2 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		37EEA18815E23FDA002DBAD2 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		37EEA18915E23FDA002DBAD2 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		37EEA18A15E23FDA002DBAD2 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		37EEA18B15E23FDA002DBAD2 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		37EEA18C15E23FDA002DBAD2 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		37EEA18D15E23FDA002DBAD2 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		37EEA18E15E23FDA002DBAD2 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		37EEA18F15E23FDA002DBAD2 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		37EEA19015E23FDA002DBAD2 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		37EEA19115E23FDA002DBAD2 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		37EEA19215E23FDA002DBAD2 /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		37EEA19315E23FDA002DBAD2 /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +119,31 @@
 		3781F37715E1569600629814 /* SharePriceTicker */ = {
 			isa = PBXGroup;
 			children = (
+				37EEA17B15E23FDA002DBAD2 /* NSObject+SBJson.h */,
+				37EEA17C15E23FDA002DBAD2 /* NSObject+SBJson.m */,
+				37EEA17D15E23FDA002DBAD2 /* SBJson.h */,
+				37EEA17E15E23FDA002DBAD2 /* SBJsonParser.h */,
+				37EEA17F15E23FDA002DBAD2 /* SBJsonParser.m */,
+				37EEA18015E23FDA002DBAD2 /* SBJsonStreamParser.h */,
+				37EEA18115E23FDA002DBAD2 /* SBJsonStreamParser.m */,
+				37EEA18215E23FDA002DBAD2 /* SBJsonStreamParserAccumulator.h */,
+				37EEA18315E23FDA002DBAD2 /* SBJsonStreamParserAccumulator.m */,
+				37EEA18415E23FDA002DBAD2 /* SBJsonStreamParserAdapter.h */,
+				37EEA18515E23FDA002DBAD2 /* SBJsonStreamParserAdapter.m */,
+				37EEA18615E23FDA002DBAD2 /* SBJsonStreamParserState.h */,
+				37EEA18715E23FDA002DBAD2 /* SBJsonStreamParserState.m */,
+				37EEA18815E23FDA002DBAD2 /* SBJsonStreamWriter.h */,
+				37EEA18915E23FDA002DBAD2 /* SBJsonStreamWriter.m */,
+				37EEA18A15E23FDA002DBAD2 /* SBJsonStreamWriterAccumulator.h */,
+				37EEA18B15E23FDA002DBAD2 /* SBJsonStreamWriterAccumulator.m */,
+				37EEA18C15E23FDA002DBAD2 /* SBJsonStreamWriterState.h */,
+				37EEA18D15E23FDA002DBAD2 /* SBJsonStreamWriterState.m */,
+				37EEA18E15E23FDA002DBAD2 /* SBJsonTokeniser.h */,
+				37EEA18F15E23FDA002DBAD2 /* SBJsonTokeniser.m */,
+				37EEA19015E23FDA002DBAD2 /* SBJsonUTF8Stream.h */,
+				37EEA19115E23FDA002DBAD2 /* SBJsonUTF8Stream.m */,
+				37EEA19215E23FDA002DBAD2 /* SBJsonWriter.h */,
+				37EEA19315E23FDA002DBAD2 /* SBJsonWriter.m */,
 				3781F38315E1569600629814 /* SharePriceTickerAppDelegate.h */,
 				3781F38415E1569600629814 /* SharePriceTickerAppDelegate.m */,
 				3781F38615E1569700629814 /* MainMenu.xib */,
@@ -167,6 +229,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EEA19515E265E4002DBAD2 /* NSObject+SBJson.m in Sources */,
+				37EEA19615E265E4002DBAD2 /* SBJsonParser.m in Sources */,
+				37EEA19715E265E4002DBAD2 /* SBJsonStreamParser.m in Sources */,
+				37EEA19815E265E4002DBAD2 /* SBJsonStreamParserAccumulator.m in Sources */,
+				37EEA19915E265E4002DBAD2 /* SBJsonStreamParserAdapter.m in Sources */,
+				37EEA19A15E265E4002DBAD2 /* SBJsonStreamParserState.m in Sources */,
+				37EEA19B15E265E4002DBAD2 /* SBJsonStreamWriter.m in Sources */,
+				37EEA19C15E265E4002DBAD2 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				37EEA19D15E265E4002DBAD2 /* SBJsonStreamWriterState.m in Sources */,
+				37EEA19E15E265E4002DBAD2 /* SBJsonTokeniser.m in Sources */,
+				37EEA19F15E265E4002DBAD2 /* SBJsonUTF8Stream.m in Sources */,
+				37EEA1A015E265E4002DBAD2 /* SBJsonWriter.m in Sources */,
 				3781F37E15E1569600629814 /* main.m in Sources */,
 				3781F38515E1569600629814 /* SharePriceTickerAppDelegate.m in Sources */,
 			);
@@ -294,6 +368,7 @@
 				3781F38D15E1569700629814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
