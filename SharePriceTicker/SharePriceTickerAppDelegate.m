@@ -23,15 +23,8 @@
     
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength: NSVariableStatusItemLength];
     
-    self.statusBar.title = @"Share Prices";
-    
-    // you can also set an image
-    //self.statusBar.image =
-    
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
-    
-    //NSError *error = nil;
     
     NSTimer *timer;
     
@@ -39,34 +32,33 @@
     
     [timer fire];
     
+}
+
+- (void) thisMethodGetsFiredOnceEveryThirtySeconds:(id)sender {
+    
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.kivaws.org/v1/loans/search.json?status=fundraising"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://finance.google.co.uk/finance/info?client=ig&q=LON:FOGL"]];
     
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     
     NSString *json_string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     
-    //NSString *stringWithoutSpaces = [json_string stringByReplacingOccurrencesOfString:@"//" withString:@""];
-    //stringWithoutSpaces = [stringWithoutSpaces stringByReplacingOccurrencesOfString:@"[" withString:@""];
-    //stringWithoutSpaces = [stringWithoutSpaces stringByReplacingOccurrencesOfString:@"]" withString:@""];
-   
-    //NSDictionary *myDict = [parser objectWithString:stringWithoutSpaces];
+    json_string = [json_string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    json_string = [json_string stringByReplacingOccurrencesOfString:@"//" withString:@""];
+    json_string = [json_string stringByReplacingOccurrencesOfString:@"[" withString:@""];
+    json_string = [json_string stringByReplacingOccurrencesOfString:@"]" withString:@""];
     
-    NSArray *statuses = [parser objectWithString:json_string error:nil];
+    NSDictionary *myDict = [parser objectWithString: json_string];
     
+    NSString *statusTitle = [NSString stringWithFormat:@"%@: %@", [myDict objectForKey:@"t"], [myDict objectForKey:@"l"]];
     
-    NSLog(@"statuses:%@", statuses);
+    self.statusBar.title = statusTitle;
+    
+    NSLog(@"Current Share Price: %@", statusTitle);
     
     parser = nil;
-    
-}
 
-- (void) thisMethodGetsFiredOnceEveryThirtySeconds:(id)sender {
-    
-    CFGregorianDate currentDate = CFAbsoluteTimeGetGregorianDate(CFAbsoluteTimeGetCurrent(), CFTimeZoneCopySystem());
-    self.statusBar.title = [NSString stringWithFormat:@"%02d:%02d:%02.0f", currentDate.hour, currentDate.minute, currentDate.second];
     
 }
 
