@@ -14,6 +14,10 @@
 
 @property (weak) IBOutlet NSMenuItem *statusMenuImage;
 
+- (IBAction)showPrefs:(NSWindow *)sender;
+
+@property (strong) IBOutlet NSWindow *createPanel;
+
 @property (strong, nonatomic) NSStatusItem *statusBar;
 
 @end

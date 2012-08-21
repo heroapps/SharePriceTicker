@@ -13,6 +13,7 @@
 
 @synthesize statusMenu = _statusMenu;
 @synthesize statusMenuImage = _statusMenuImage;
+@synthesize createPanel = _createPanel;
 @synthesize statusBar = _statusBar;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -69,5 +70,11 @@
     
 }
 
+
+- (IBAction)showPrefs:(NSWindow *)sender {
+    
+    [self.createPanel makeKeyAndOrderFront:sender];
+    
+}
 
 @end
