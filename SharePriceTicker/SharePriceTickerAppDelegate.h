@@ -12,6 +12,8 @@
 
 @property (weak) IBOutlet NSMenu *statusMenu;
 
+@property (weak) IBOutlet NSMenuItem *statusMenuImage;
+
 @property (strong, nonatomic) NSStatusItem *statusBar;
 
 @end

@@ -12,6 +12,7 @@
 @implementation SharePriceTickerAppDelegate
 
 @synthesize statusMenu = _statusMenu;
+@synthesize statusMenuImage = _statusMenuImage;
 @synthesize statusBar = _statusBar;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -54,6 +55,12 @@
     NSString *statusTitle = [NSString stringWithFormat:@"%@: %@", [myDict objectForKey:@"t"], [myDict objectForKey:@"l"]];
     
     self.statusBar.title = statusTitle;
+   
+    NSURLRequest *graph = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.com/finance/chart?q=LON:FOGL&tlf=12"]];
+    NSData *image_data = [NSURLConnection sendSynchronousRequest:graph returningResponse:nil error:nil];
+    NSImage *img = [[NSImage alloc] initWithData:image_data];
+    
+    self.statusMenuImage.image = img;
     
     NSLog(@"Current Share Price: %@", statusTitle);
     
