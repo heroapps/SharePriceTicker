@@ -14,9 +14,19 @@
 
 @property (weak) IBOutlet NSMenuItem *statusMenuImage;
 
-- (IBAction)showPrefs:(NSWindow *)sender;
+- (IBAction) showPrefs:(NSWindow *)sender;
+- (IBAction) closePreferencesWindow:(id)sender;
+- (IBAction) saveUserPreferences:(id)sender;
 
-@property (strong) IBOutlet NSWindow *createPanel;
+@property (weak) IBOutlet NSPopUpButton *apiChoice;
+@property (weak) IBOutlet NSPopUpButton *refreshRate;
+
+@property (weak) IBOutlet NSButton *showPercentage;
+@property (weak) IBOutlet NSButton *runSharePriceTickerOnStartup;
+@property (weak) IBOutlet NSButton *useNotificationCentreAlerts;
+
+@property (weak) IBOutlet NSWindow *createPanel;
+
 
 @property (strong, nonatomic) NSStatusItem *statusBar;
 
