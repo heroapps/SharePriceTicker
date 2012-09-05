@@ -9,6 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 @interface SharePriceTickerAppDelegate : NSObject <NSApplicationDelegate>
+{
+    NSMutableArray *toDoList;
+    @private
+    NSArray     *aBuffer;
+    
+}
 
 @property (weak) IBOutlet NSMenu *statusMenu;
 
@@ -16,7 +22,18 @@
 
 - (IBAction) showPrefs:(NSWindow *)sender;
 - (IBAction) closePreferencesWindow:(id)sender;
-- (IBAction) saveUserPreferences:(id)sender;
+- (IBAction) changePercentageVal:(id)sender;
+- (IBAction) changeRunSharePriceOnStartup:(id)sender;
+- (IBAction) changeUseNotificationCentreForAlerts:(id)sender;
+- (IBAction) changeRefreshRate:(NSPopUpButton *)sender;
+- (IBAction) changeFinanceAPI:(NSPopUpButton *)sender;
+- (IBAction) stopTheTimer:(NSButton *)sender;
+- (IBAction) removeSymbol:(NSButton *)sender;
+
+
+- (float) getFrefreshRateIntervalInSeconds: (float)secs;
+
+@property (weak) IBOutlet NSTableView *shareSymTable;
 
 @property (weak) IBOutlet NSPopUpButton *apiChoice;
 @property (weak) IBOutlet NSPopUpButton *refreshRate;
@@ -29,5 +46,7 @@
 
 
 @property (strong, nonatomic) NSStatusItem *statusBar;
+
+@property (retain, nonatomic) NSTimer *refreshRateTimer;
 
 @end
